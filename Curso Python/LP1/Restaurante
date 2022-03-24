@@ -1,0 +1,37 @@
+print('Olá, boa tarde. Bem vindo ao nosso restaurante de massas')
+nome = input('Poderia me informar o seu nome, por gentileza? ')
+print('Perfeito', nome, '. Hoje em nosso cardápio possuímos macarrão e pizza!')
+escolha = input('Você vai querer pizza ou marcarrão?')
+
+if escolha == 'pizza':
+    print('Okay', nome, '. Agora escolha o sabor!')
+    sabor = input('Os sabores são: Calabresa, Portuguesa, Mussarela e abacaxi, qual vai querer?')
+    opcao = input('Tudo bem. Vai querer alguma bebida?')
+
+    if opcao == 'sim':
+        bebida1 = input('Temos Coca-Cola, Guaraná, Suco dell vale e água, oque vai querer? ')
+        print('Perfeito, a conta deu R$60,00')
+        print('Então vai ser: uma pizza sabor ', sabor, 'acompanhado de uma ', bebida1,)
+        print('Seu pedido logo estará pronto ', nome, '. Obrigado pela preferencia e volte sempre! ')
+    else:
+        print('Ok, a conta deu R$50,00 ')
+        print('Então vai ser: uma pizza sabor ', sabor,)
+        print('Seu pedido logo estará pronto', nome, '. Obrigado pela preferencia e volte sempre! ')
+
+else:
+        print('Perfeito, poderia então me dizer suas preferencias? ')
+        massa = input('A massa vai ser de Espaguete ou Gnocchi? ')
+   
+        molho = input('Tudo bem, e o molho vai ser branco ou bolonhesa? ')
+        opcao2 = input('Tudo bem. Vai querer alguma bebida? ')
+        if opcao2 == 'sim':
+            bebida3 = input('Temos Coca-Cola, Guaraná, Suco dell vale e água, oque vai querer? ')
+            print('Perfeito, a conta deu R$50,00')
+            print('Então vai ser um macarrão com massa de ', massa, 'com molho ', molho, 'acompanhado de uma ', bebida3,)
+            print('Seu pedido logo estará pronto', nome, '. Obrigado pela preferencia e volte sempre! ')
+        else:
+            print('Perfeito, a conta deu R$40,00')
+            print('Então vai ser um macarrão com massa de', massa, 'com molho', molho, 'acompanhado de uma ')
+            print('Seu pedido logo estará pronto', nome, '. Obrigado pela preferencia e volte sempre!')
+
+
